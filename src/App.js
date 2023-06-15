@@ -10,8 +10,8 @@ const url =
 function App() {
   return (
     <div className="App">
-      <div className="landingPage">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="landingPage ">
+        <img src={logo} className="App-logo img-responsive" alt="logo" />
         <p>
           We are currently working on a boardgame that requires KITTENS to go
           MINING!
