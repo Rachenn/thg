@@ -1,14 +1,16 @@
 .App {
   text-align: center;
   background-color: #282c34;
+  background-image: url('./image/background.png');
+  background-size: cover;
   min-height: 100vh;
 }
 
 .App-logo {
   /* height: 400px; */
-  pointer-events: none;
-  max-width:60%;
-  margin:0 auto;
+  /* pointer-events: none; */
+  max-width: 40%;
+  /* margin:0 auto; */
 }
 
 .socials {
