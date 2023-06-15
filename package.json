@@ -23,7 +23,9 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "add-domain": "echo \"www.terribleheartgames.com\" > build/CNAME",
+    "deploy": "npm run add-domain && gh-pages -d build",
+    "bd": "npm run build && npm run deploy",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
