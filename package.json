@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "add-domain": "echo \"www.terribleheartgames.com\" > build/CNAME",
+    "add-domain": "echo www.terribleheartgames.com > build/CNAME",
     "deploy": "npm run add-domain && gh-pages -d build",
     "bd": "npm run build && npm run deploy",
     "build": "react-scripts build",
