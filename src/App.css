@@ -3,26 +3,15 @@
   background-color: #282c34;
   background-image: url('./image/background.png');
   background-size: cover;
-  min-height: 100vh;
+   min-height: 100vh;
 }
 
 .App-logo {
-  /* height: 400px; */
-  /* pointer-events: none; */
-  max-width: 40%;
-  /* margin:0 auto; */
+  max-width: 30vh;
 }
 
 .socials {
-  font-size: 50px;
-}
-
-/* body {
-  height: auto;
-} */
-
-.root {
-  height: 100vh;
+  font-size: calc(20px + 2vmin);
 }
 
 .landingPage {
