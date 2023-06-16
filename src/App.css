@@ -3,6 +3,8 @@
   background-color: #282c34;
   background-image: url('./image/background.png');
   background-size: cover;
+  display: flex;
+
 }
 
 .App-logo {
@@ -16,12 +18,10 @@
 .landingPage {
   /* width: 70%; */
   align-items: center;
-  border: blue;
-  border-width: 5%;
   background-color: white;
   overflow: visible;
   /* min-height: 100vh; */
-  display: block;
+  /* display: block; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -30,12 +30,14 @@
   padding: 1%;
   /* height: 100vmin; */
   width:60%;
-  top:0;
+  top:20px;
   bottom: 0;
   left: 0;
   right: 0;
   min-height: 100vh;
   margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   /* width: 70%; */
   /* height: 70%; */
 
