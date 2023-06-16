@@ -1,5 +1,5 @@
 import logo from "./image/THG_NoBG.png";
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -8,8 +8,21 @@ import "./App.css";
 const url =
   "https://terribleheartgames.us11.list-manage.com/subscribe/post?u=88a1cb60d79337f4859526d52&amp;id=860d732513&amp;f_id=0087a6e0f0";
 function App() {
+  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportHeight(window.innerHeight);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
-    <div className="App">
+    <div className="App" style={{ height: viewportHeight }}>
       <div className="landingPage ">
         <img src={logo} className="App-logo img-responsive" alt="logo" />
         <p>Are you ready for some purr-fectly amazing fun?</p>
